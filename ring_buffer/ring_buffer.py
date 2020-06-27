@@ -12,7 +12,7 @@ class RingBuffer:
             self.size += 1
         else:
             # in this instance, the RingBuffer is at max capacity
-            #remove oldest item from data
+            # remove oldest item from data
             self.data.pop(self.oldest_index)
             # insert item into data at oldest_item index
             self.data.insert(self.oldest_index, item)

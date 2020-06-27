@@ -47,5 +47,5 @@ class LinkedList:
             current_node.next_node = prev
             prev = current_node
             current_node = next
-            # this is what gets recursively stacked to create the "reverse" effect:
+            # this is what gets recursively "stacked" to create the "reverse" effect:
             self.reverse_list(current_node, prev)
